@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "verdana";
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  background-color: azure;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 200px;
+  border-left: 4px solid royalblue;
+  margin-top: 20px;
+}
+
+.date-inputs {
+  margin-top: 5px;
+  width: 400px;
+  display: flex;
+  align-items: flex-end;
+  /*  justify-content: space-between;*/
+}
+
+.date-inputs button {
+  background-color: royalblue;
+  height: 100%;
+}
+
+button:active {
+  background-color: #87a2f0;
+}
+
+.date-inputs input,
+.date-inputs button {
+  width: 80px;
+  height: 30px;
+  font: 18px "verdana";
+  border: none;
+  box-sizing: border-box;
+  margin-right: 0;
+  box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.date-inputs div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  color: azure;
+  background-color: black;
+  padding: 5px;
+}
+
+form {
+  /*  background: rgba(0, 0, 255, 0.21);*/
+}
+
+.result {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.result ul {
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
