@@ -2,19 +2,20 @@ body {
   display: flex;
   justify-content: center;
   font-family: "verdana";
-}
+  }
 
 .app {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 500px;
-  background-color: azure;
+  background-color: #c7d3f4;
   padding: 20px;
   box-sizing: border-box;
   min-height: 200px;
   border-left: 4px solid royalblue;
   margin-top: 20px;
+  box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .date-inputs {
@@ -22,23 +23,30 @@ body {
   width: 400px;
   display: flex;
   align-items: flex-end;
-  /*  justify-content: space-between;*/
 }
 
 .date-inputs button {
   background-color: royalblue;
   height: 100%;
+  font-size: 20px;
 }
 
 button:active {
   background-color: #87a2f0;
 }
-
-.date-inputs input,
 .date-inputs button {
+  width: 100%;
+  height: 60px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.date-inputs input {
   width: 80px;
   height: 30px;
-  font: 18px "verdana";
+  font-size: 18px;
   border: none;
   box-sizing: border-box;
   margin-right: 0;
@@ -55,10 +63,8 @@ label {
   color: azure;
   background-color: black;
   padding: 5px;
-}
-
-form {
-  /*  background: rgba(0, 0, 255, 0.21);*/
+  height: 30px;
+  box-sizing: border-box;
 }
 
 .result {
@@ -68,6 +74,15 @@ form {
 }
 
 .result ul {
-  border-bottom: 1px solid lightgray;
-  padding: 10px;
+  padding: 5px;
+  list-style: none;
+}
+
+.result ul li {
+  background-color: #ffffff;
+  padding: 7px;
+  border-radius: 5px;
+  border-right: 3px solid royalblue;
+  border-left: 3px solid royalblue;
+  box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
 }
