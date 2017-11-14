@@ -1,21 +1,48 @@
+@font-face {
+  font-family: "nasalization";
+  src: url("/fonts/nasalization-rg.ttf") format("truetype");
+}
+
+html {
+  background-color: #ebf2ff;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
   display: flex;
   justify-content: center;
   font-family: "verdana";
-  }
+}
 
 .app {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 500px;
-  background-color: #c7d3f4;
   padding: 20px;
   box-sizing: border-box;
   min-height: 200px;
-  border-left: 4px solid royalblue;
-  margin-top: 20px;
-  box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
+  border-left: 10px solid #87a2f0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.82);
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6)
+}
+
+h1 {
+  padding: 10px;
+  margin: 0;
+  font: 37px "nasalization";
+  color: #ffffff;
+  text-shadow: 1px 1px 10px black;
 }
 
 .date-inputs {
@@ -26,22 +53,25 @@ body {
 }
 
 .date-inputs button {
-  background-color: royalblue;
+  background-color: #87a2f0;
   height: 100%;
   font-size: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 button:active {
   background-color: #87a2f0;
 }
+
 .date-inputs button {
   width: 100%;
   height: 60px;
   border: none;
   box-sizing: border-box;
   box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
+  font: 30px "nasalization";
 }
-
 
 .date-inputs input {
   width: 80px;
@@ -51,6 +81,7 @@ button:active {
   box-sizing: border-box;
   margin-right: 0;
   box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
+  font: 20px "nasalization";
 }
 
 .date-inputs div {
@@ -60,11 +91,12 @@ button:active {
 
 label {
   font-size: 18px;
-  color: azure;
+  color: white;
   background-color: black;
   padding: 5px;
   height: 30px;
   box-sizing: border-box;
+  font: 18px "nasalization";
 }
 
 .result {
@@ -76,13 +108,9 @@ label {
 .result ul {
   padding: 5px;
   list-style: none;
-}
-
-.result ul li {
-  background-color: #ffffff;
-  padding: 7px;
-  border-radius: 5px;
-  border-right: 3px solid royalblue;
-  border-left: 3px solid royalblue;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.83);
+  border-left: 15px solid #87a2f0;
   box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
 }
