@@ -110,7 +110,6 @@ label {
   padding: 5px;
   list-style: none;
   border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   background-color: rgba(255, 255, 255, 0.83);
   border-left: 15px solid #87a2f0;
   box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
@@ -137,5 +136,9 @@ label {
   }
   h1 {
     font-size: 24px;
+  }
+  .result {
+    width: 80%;
+    font-size: 15px;
   }
 }
