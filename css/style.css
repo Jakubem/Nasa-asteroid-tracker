@@ -31,10 +31,10 @@ body {
   margin-bottom: 40px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.82);
   border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
   position: relative;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.6)
+  background: rgba(0, 0, 0, 0.6);
+  background: #2c4171;
 }
 
 h1 {
@@ -47,7 +47,6 @@ h1 {
 
 .date-inputs {
   margin-top: 5px;
-  width: 400px;
   display: flex;
   align-items: flex-end;
 }
@@ -57,7 +56,6 @@ h1 {
   height: 100%;
   font-size: 20px;
   border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 button:active {
@@ -69,8 +67,11 @@ button:active {
   height: 60px;
   border: none;
   box-sizing: border-box;
-  box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
   font: 30px "nasalization";
+}
+
+.date-inputs button:hover {
+  background-color: white;
 }
 
 .date-inputs input {
@@ -91,8 +92,8 @@ button:active {
 
 label {
   font-size: 18px;
-  color: white;
-  background-color: black;
+  color: #000000;
+  background-color: #87a2f0;
   padding: 5px;
   height: 30px;
   box-sizing: border-box;
@@ -113,4 +114,28 @@ label {
   background-color: rgba(255, 255, 255, 0.83);
   border-left: 15px solid #87a2f0;
   box-shadow: .5px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    width: 350px;
+    min-height: 150px;
+    padding: 0;
+  }
+  .date-inputs input {
+    width: 60px;
+    font-size: 15px;
+  }
+  label {
+    width: 60px;
+    font-size: 14px;
+  }
+  .date-inputs button {
+    height: 60px;
+    width: 100px;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
