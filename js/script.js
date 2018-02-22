@@ -4,8 +4,6 @@ let month = document.getElementById("month");
 let day = document.getElementById("day");
 let res = document.querySelector(".result");
 
-//  const inputDate = ;
-
 function printInfo(inputDate) {
   return function () {
     if (this.status == 200) {
