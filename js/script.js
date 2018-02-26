@@ -1,8 +1,8 @@
-let btn = document.getElementById("get-info");
-let year = document.getElementById("year");
-let month = document.getElementById("month");
-let day = document.getElementById("day");
-let res = document.querySelector(".result");
+const btn = document.getElementById("get-info");
+const year = document.getElementById("year");
+const month = document.getElementById("month");
+const day = document.getElementById("day");
+const res = document.querySelector(".result");
 
 function printInfo(inputDate) {
   return function () {
@@ -17,7 +17,7 @@ function printInfo(inputDate) {
         let output = `
                     <ul>
                       <li>Object name: ${asteroidName}</li>
-                      <li>Potential hazard : ${danger}</li>
+                      <li>Potential hazard: ${danger}</li>
                     </ul>
                    `
         res.innerHTML += output;
