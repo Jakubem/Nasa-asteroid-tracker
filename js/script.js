@@ -33,8 +33,6 @@ function loadInfo(e) {
   if (inputDate != "--" && year.value >= 1500 && month.value <= 12 && day.value <= 31) {
     let xhr = new XMLHttpRequest();
     const link = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${inputDate}&end_date=${inputDate}&detailed=false&api_key=pwiphsxnmlaftrN3B3LRorXLJP6vvi0Fag4MeIBs`;
-    console.log(inputDate);
-    console.log(link);
     xhr.onload = printInfo(inputDate);
     xhr.open("GET", link, true);
     xhr.send();
